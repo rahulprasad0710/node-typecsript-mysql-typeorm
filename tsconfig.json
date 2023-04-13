@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ES2021",
+        "typeRoots": ["./src/types", "./node_modules/@types"],
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "outDir": "./build/",
+        "rootDir": "./",
+        "strict": true,
+        "baseUrl": "./src/",
+        "paths": {
+            "*": ["node_modules", "public"],
+            "@controller/*": ["controllers/*"]
+        },
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "strictPropertyInitialization": false,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true
+    },
+
+    "include": ["src"],
+    "exclude": ["node_modules/**/*.ts"]
+}
